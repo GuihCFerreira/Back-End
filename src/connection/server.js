@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const db = require('../database/connectDb');
+const routes = require('../routes/indexRouter');
 
 const server = express();
 
@@ -12,6 +13,8 @@ server.use(
         extended: true
     })
 );
+
+server.use(routes);
 
 const initServer = ()=> {
     db.connectDatabase();

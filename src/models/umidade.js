@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Umidade = mongoose.model('Temperatura',{
     umidade: String,
-    data: Date,
+    data: String,
     hora: String,
 });
 

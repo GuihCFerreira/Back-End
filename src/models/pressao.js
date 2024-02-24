@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Pressao = mongoose.model('Temperatura',{
     pressao: String,
-    data: Date,
+    data: String,
     hora: String,
 });
 
